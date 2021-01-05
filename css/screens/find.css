@@ -1,4 +1,4 @@
-.screen-header__icons {
+.cog_homework {
   position: relative;
 }
 
@@ -9,32 +9,10 @@
   background-color: tomato;
   position: absolute;
   border-radius: 50%;
-  left: 74px;
-  bottom: 20px;
+  left: -3px;
+  bottom: 18px;
 }
 /* 위에는 숙제임 */
-
-.find-icons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.find-icons__icon {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.find-icons__icon i {
-  font-size: 35px;
-}
-
-.find-icons__icon span {
-  font-size: 13px;
-  width: 60px;
-  margin-top: 15px;
-  font-weight: 600;
-}
 
 .recommended-friends {
   margin: 25px 0px;
@@ -138,4 +116,24 @@
 
 .open-post__heart-count span {
   margin-left: 3px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
 }
