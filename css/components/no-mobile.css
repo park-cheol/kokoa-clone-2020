@@ -1,18 +1,52 @@
-#no-mobile {
-  position: absolute;
-  z-index: 99;
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--yellow);
-  display: flex;
-  top: 0;
-  justify-content: center;
-  align-items: center;
-  font-size: 32px;
+@keyframes no-mobileAnimation {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }
 
-@media screen and (max-width: 700px) {
-  #no-mobile {
+.no-mobile {
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+.no-mobile span {
+  display: block;
+  width: 200px;
+  text-align: center;
+  background-color: rgba(236, 18, 18, 0.918);
+  border-radius: 8px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.863);
+  top: 60%;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.no-mobile img {
+  width: 80vw;
+  height: 50vh;
+}
+
+.no-mobile img,
+.no-mobile span {
+  animation: no-mobileAnimation 1.5s ease-in-out infinite;
+}
+
+@media screen and (max-width: 680px) {
+  .no-mobile {
     display: none;
   }
 }
