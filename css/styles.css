@@ -11,6 +11,7 @@
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
 @import "components/no-mobile.css";
+@import "components/shootingstar.css";
 
 /* Screens*/
 @import "screens/login.css";
@@ -19,6 +20,7 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
+@import "screens/turnon.css";
 
 body {
   font-family: "Ubuntu";

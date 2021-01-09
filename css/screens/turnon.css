@@ -1,0 +1,81 @@
+/*power button*/
+@keyframes powerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .turnOn-battery,
+  .turnOn-Btn {
+    animation: powerAnimation 0.5s ease-in-out;
+  }
+}
+
+.turnOnpage {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.turnOn-Btn {
+  font-size: 70px;
+  margin-bottom: 32px;
+  transition: color 0.5s ease-in-out;
+}
+.turnOn-Btn:hover {
+  color: rgb(53, 53, 206);
+}
+
+.turnOn-battery {
+  font-size: 32px;
+  display: flex;
+}
+
+@keyframes boltAnimation {
+  50% {
+    color: yellow;
+  }
+}
+.turnOn-bolt {
+  display: inline-block;
+  margin-left: 42px;
+}
+
+/**/
+.battery-status {
+  margin-right: 12px;
+  position: relative;
+}
+
+.turnon-quarter,
+.turnon-half,
+.turnon-full {
+  position: absolute;
+  color: rgb(255, 255, 255);
+}
+
+@keyframes batteryAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.turnon-half {
+  animation: batteryAnimation 1s linear infinite;
+}
+.turnon-full {
+  animation: batteryAnimation 1s linear infinite;
+}

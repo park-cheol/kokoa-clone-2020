@@ -24,9 +24,26 @@
   align-items: center;
 }
 
-.status-bar__column .fa-battery-full {
-  margin: 0px 5px;
+.status-bar__column:last-child span {
+  display: flex;
+  margin-right: -20px;
 }
+
+.status-bar__column .fa-battery-full,
+.status-bar__column .fa-battery-half,
+.status-bar__column .fa-battery-quarter {
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+.status-bar__column .fa-bolt {
+  font-size: 20px;
+}
+
 .status-bar__column:first-child span {
   margin-right: 5px;
+}
+
+.fa-bolt {
+  animation: boltAnimation 1s ease-in-out infinite;
 }
