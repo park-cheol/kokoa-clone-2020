@@ -18,7 +18,7 @@
 .turnOnpage {
   width: 100vw;
   height: 100vh;
-  color: white;
+  color: rgba(255, 255, 255, 0.726);
   position: absolute;
   top: 0;
   display: flex;
@@ -27,13 +27,26 @@
   align-items: center;
 }
 
+@keyframes lightEffect {
+  100% {
+    background: radial-gradient(
+      rgba(240, 237, 237, 0.849) 3%,
+      rgba(208, 219, 51, 0.418) 35%,
+      rgba(208, 219, 51, 0.5)
+    );
+  }
+}
 .turnOn-Btn {
   font-size: 70px;
   margin-bottom: 32px;
   transition: color 0.5s ease-in-out;
+  padding: 30px 30px;
 }
 .turnOn-Btn:hover {
-  color: rgb(53, 53, 206);
+  border-radius: 50%;
+  color: rgba(243, 243, 36, 0.829);
+  animation: lightEffect 0.5s ease-in-out forwards;
+  animation-delay: 0.3s;
 }
 
 .turnOn-battery {
@@ -43,7 +56,7 @@
 
 @keyframes boltAnimation {
   50% {
-    color: yellow;
+    color: rgba(255, 255, 0, 0.87);
   }
 }
 .turnOn-bolt {
@@ -65,12 +78,18 @@
 }
 
 @keyframes batteryAnimation {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
+    color: rgb(255, 41, 255);
   }
+}
+
+.turnon-quarter {
+  z-index: 3;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .turnon-half {

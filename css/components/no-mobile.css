@@ -45,7 +45,7 @@
   animation: no-mobileAnimation 1.5s ease-in-out infinite;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 580px) {
   .no-mobile {
     display: none;
   }
