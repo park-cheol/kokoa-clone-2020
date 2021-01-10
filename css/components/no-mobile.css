@@ -20,7 +20,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  z-index: 100;
+  z-index: 10000;
 }
 .no-mobile span {
   display: block;
