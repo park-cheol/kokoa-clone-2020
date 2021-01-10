@@ -1,58 +1,77 @@
-.welcome-header {
-  margin: 90px 0px;
-  text-align: center;
+.login-header__menu {
+  position: absolute;
+  color: var(--darkgray-color);
+  right: 11%;
+  top: 20%;
+  z-index: 120;
+  width: 80vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@keyframes musicAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.login-header__music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px dashed var(--darkgray-color);
+  border-radius: 15px;
+  width: 450px;
+  height: 50px;
+  animation: musicAnimation 1s ease-in-out forwards;
+}
+
+.login-header__music audio {
+  width: 80px;
+  height: 25px;
+  margin: 0 30px;
+}
+
+@keyframes loginmessageAnimation {
+  0% {
+    transform: rotateZ(25deg);
+  }
+  50% {
+    transform: rotateZ(-5deg);
+  }
+}
+
+.login-header__message {
+  font-size: 40px;
+  font-weight: 600;
+  animation: loginmessageAnimation 1s linear forwards;
+}
+
+.fingerprint {
+  color: var(--darkgray-color);
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
+  right: 43.5%;
+  top: 65%;
   font-weight: 600;
 }
 
-.welcome-header__title {
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-.welcome-header__text {
-  font-size: medium;
-  width: 60%;
-  opacity: 0.5;
+.fingerprint a {
+  font-size: 60px;
+  transition: color 0.5s ease-in-out;
 }
 
-#login-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 30px;
-}
-
-#login-form input {
-  border: none;
-  padding: 15px 0;
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-#login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-#login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  transition: border-color 0.3s ease-in-out;
-}
-
-#login-form input:focus {
-  border-color: var(--yellow);
-}
-
-#login-form input[type="submit"] {
-  background-color: var(--yellow);
-  cursor: pointer;
-  padding: 20px 0px;
-  border-radius: 5px;
-}
-
-#login-form a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  font-size: 13px;
+.fingerprint a:hover {
+  color: rgba(106, 106, 233, 0.856);
 }

@@ -1,12 +1,29 @@
 .nav {
+  cursor: pointer;
   position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #f9f9fa;
-  padding: 20px 50px;
+  right: -97vw;
+  width: 100vw;
+  height: 90px;
+  padding: 30px 10px;
+  background-color: rgba(243, 243, 243, 0.329);
   box-sizing: border-box;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
 }
+
+@keyframes width {
+  to {
+    transform: translateX(-97vw);
+  }
+}
+.nav:hover {
+  animation: width 1s ease-in-out forwards;
+  display: flex;
+}
+
+.leftleft {
+}
+
 .nav__list {
   display: flex;
   justify-content: space-between;
@@ -71,4 +88,8 @@
 }
 .nav__btn:last-child {
   animation-delay: 0.8s;
+}
+
+.nav-fadeout {
+  display: none;
 }
