@@ -5,6 +5,7 @@
   padding: var(--horizontal-space);
   opacity: 80%;
   padding-top: 40px;
+  color: var(--darkgray-color);
 }
 
 .screen-header__title {
