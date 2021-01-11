@@ -5,11 +5,10 @@
   width: 100vw;
   height: 90px;
   padding: 30px 10px;
-  background-color: var(--background-color);
+  background-color: rgba(255, 255, 255, 0.85);
   box-sizing: border-box;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 20px;
-  top: 36%;
+  top: 38%;
 }
 
 @keyframes width {
@@ -22,7 +21,7 @@
 }
 
 .nav__link {
-  color: #2e363e;
+  color: rgba(0, 0, 0, 0.7);
   position: relative;
 }
 
@@ -68,4 +67,13 @@
 
 .nav__btn {
   margin: 0 47px;
+}
+
+.nav__link i {
+  transition: transform 0.1s linear;
+}
+
+.nav__link i:hover {
+  transform: scale(1.3);
+  color: #bf9891;
 }

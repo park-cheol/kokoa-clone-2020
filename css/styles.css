@@ -21,6 +21,7 @@
 @import "screens/settings.css";
 @import "screens/chat.css";
 @import "screens/turnon.css";
+@import "screens/camera.css";
 
 body {
   font-family: "Ubuntu";
