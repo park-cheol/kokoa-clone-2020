@@ -176,14 +176,10 @@
   position: absolute;
 }
 
-@keyframes capture {
-  100% {
-    background-color: black;
-  }
-}
-
-.cameraRedBtn:active {
-  background-color: black;
-  width: 100000vw;
-  height: 1000000vh;
+.camera-sound {
+  position: absolute;
+  width: 85px;
+  padding-left: 35px;
+  bottom: 47.5px;
+  opacity: 0;
 }
