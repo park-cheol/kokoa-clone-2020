@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--horizontal-space);
+  color: var(--darkgray-color);
 }
 
 .alt-header__column {
@@ -27,4 +28,8 @@
 
 .alt-header__column span:last-child {
   margin-left: 20px;
+}
+
+.alt-header i:hover {
+  color: var(--purple);
 }

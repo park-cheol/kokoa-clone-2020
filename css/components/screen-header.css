@@ -1,13 +1,3 @@
-.screen-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--horizontal-space);
-  opacity: 80%;
-  padding-top: 40px;
-  color: var(--darkgray-color);
-}
-
 @keyframes headertitleAnimation {
   from {
     opacity: 0;
@@ -18,10 +8,20 @@
   }
 }
 
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  opacity: 80%;
+  padding-top: 40px;
+  color: var(--darkgray-color);
+  animation: headertitleAnimation 1s linear forwards;
+}
+
 .screen-header__title {
   font-size: 32px;
   font-weight: 600;
-  animation: headertitleAnimation 0.5s linear forwards;
 }
 
 .screen-header__icons span {
@@ -35,6 +35,10 @@
   to {
     transform: rotateZ(360deg);
   }
+}
+
+.screen-header__icons i:first-child:hover {
+  color: var(--purple);
 }
 
 .screen-header__icons .fa-cog:hover {
