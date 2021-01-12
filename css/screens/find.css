@@ -13,34 +13,41 @@
   bottom: 18px;
 }
 /* 위에는 숙제임 */
+.only_find img {
+  height: 110vh;
+}
+.find-setting {
+  margin-left: 20px;
+}
 
 .recommended-friends {
   margin: 25px 0px;
   padding: 25px 0px;
   border-top: var(--main-border);
   border-bottom: var(--main-border);
+  color: var(--darkgray-color);
 }
 
 .recommended-friends__title {
   font-size: 14px;
-  color: var(--lightgray-color);
 }
 .recommended-friends span {
   display: block;
   margin: 100px 0px;
   text-align: center;
   font-size: 18px;
-  color: var(--lightgray-color);
+  color: var(--darkgray-color);
 }
 
+.open-chat {
+  color: var(--darkgray-color);
+}
 .open-chat__header {
   display: flex;
   justify-content: space-between;
-  color: rgba(0, 0, 0, 0.4);
 }
 
 .open-chat__title {
-  color: var(--lightgray-color);
   font-weight: 600;
   margin-bottom: 25px;
 }
@@ -49,6 +56,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--background-color);
+  border: 2px solid black;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
 .open-post__title {
@@ -136,4 +149,8 @@
 .open-post__heart-count:hover i {
   will-change: transform;
   animation: heartBeat 1s linear infinite;
+}
+
+.icon-row {
+  color: var(--darkgray-color);
 }
