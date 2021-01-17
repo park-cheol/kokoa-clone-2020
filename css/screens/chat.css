@@ -1,5 +1,5 @@
 #chat-screen {
-  height: 500vh;
+  height: 100%;
 }
 
 #chat-screen .alt-header {
@@ -200,4 +200,13 @@
 
 .reply:focus-within {
   transform: translateY(80px);
+}
+
+.message-row--you {
+  display: flex;
+  flex-direction: column;
+}
+.message-box--you {
+  margin-bottom: 10px;
+  display: flex;
 }
